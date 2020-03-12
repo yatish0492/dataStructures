@@ -2,7 +2,7 @@ package com.yatish.Stack;
 
 import java.util.Stack;
 
-public class S1_reverseStack {
+public class S2_reverseStack {
 
 	 static Stack<Character> st = new Stack<>();
     

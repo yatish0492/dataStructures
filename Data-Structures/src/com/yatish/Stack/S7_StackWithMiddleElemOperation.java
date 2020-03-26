@@ -2,6 +2,8 @@ package com.yatish.Stack;
 
 // we can achieve this by using custom doubly linked list implementation from scratch.Basically writing linked list form scratch.
 // NOTE: we are achieving O(1) complexity with time and space.
+// whenever there is a question like O(1) requirement with stacks.... we can achieve by writing linked list from scratch and
+// using that for storing the stack.
 public class S7_StackWithMiddleElemOperation {
 
     public static void main(String[] args) {

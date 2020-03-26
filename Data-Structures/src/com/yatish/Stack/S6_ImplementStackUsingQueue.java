@@ -14,6 +14,10 @@ public class S6_ImplementStackUsingQueue {
         stack.push(2);
         stack.push(3);
 
+        System.out.println(stack.popWithOnly1Queue());
+        System.out.println(stack.popWithOnly1Queue());
+        System.out.println(stack.popWithOnly1Queue());
+
         System.out.println(stack.q1);
     }
 }
@@ -28,6 +32,7 @@ class StackUsingQueue {
         return newElement;
     }
 
+    // checkout out below 'popWithOnly1Queue()'  which is more efficient than  this.
     public Integer pop() {
         if(q1.size() == 0) {
             System.out.println("Stack Overflow Exception");
@@ -45,6 +50,16 @@ class StackUsingQueue {
         }
 
         return removedElem;
+    }
+
+    // More efficient way of popping element
+    public Integer popWithOnly1Queue() {
+        // elements are rotated except last element. then last element will be the one to pop out.
+        for(int i = 0; i < q1.size() - 1 ; i++ ) {
+            Integer temp = q1.remove();
+            q1.add(temp);
+        }
+        return q1.remove();
     }
 
 }

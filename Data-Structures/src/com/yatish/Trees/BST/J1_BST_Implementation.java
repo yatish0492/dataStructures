@@ -2,6 +2,8 @@ package com.yatish.Trees.BST;
 
 import com.yatish.Trees.Node;
 
+// NOTE: In-Order traversal will give the elements in ascending order. eg: inorder traversal prints - 6,8,9,10,11,12,13
+//          in this program example.
 public class J1_BST_Implementation {
 
     public static void main(String[] args) {

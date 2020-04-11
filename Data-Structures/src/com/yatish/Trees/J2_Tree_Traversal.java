@@ -33,7 +33,8 @@ public class J2_Tree_Traversal {
 		 * NOTE:
 		 *  ********* Just know that recursively in trees for traversing it recursively calling the current function with
 		 * 			  currentNode.left and then currentNode.right will goto each node of the tree.we can add our required
-		 * 			  logics accordingly.
+		 * 			  logics accordingly. Having a condition of if(node == null) check is mandatory.
+		 *
 		 *
 		 */
 

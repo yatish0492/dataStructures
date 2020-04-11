@@ -1,5 +1,6 @@
 package com.yatish.Trees;
 
+// NOTE: In-Order traversal of a Binary Search Tree will give elements in ascending order.
 public class J3_Tree_Traversal_DFS {
 
 	public static void main(String[] args) {

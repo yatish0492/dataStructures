@@ -1,5 +1,18 @@
 package com.yatish.Trees;
 
+/*
+	What is a binary tree?
+		Binary tree can have only 2 children. left and right child.
+
+	What is skewed binary tree?
+        Binary tree with only right childs or only left childs.
+        eg:
+                        10                              10
+                          \                            /
+                          20           OR             8
+                            \                        /
+                             30                     6
+ */
 public class J1_Tree_Implementation {
 
 	public static void main(String[] args) {

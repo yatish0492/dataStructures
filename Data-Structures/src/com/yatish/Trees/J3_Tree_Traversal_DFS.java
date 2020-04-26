@@ -55,11 +55,18 @@ public class J3_Tree_Traversal_DFS {
 class BinaryTree1 {
 	
 	Node root;
+
+	/*
+			  50
+           /     \
+          30      70
+	 */
 	
 	/*
 	 * Depth First Traversal (PreOrder)
 	 * -------------------------------
-	 *
+	 *	root - left - right
+	 *  50 - 30 - 70
 	 */
 	public void PreOrderTraversal(Node node) {
 		if(node == null) {
@@ -69,8 +76,13 @@ class BinaryTree1 {
 		PreOrderTraversal(node.left);
 		PreOrderTraversal(node.right);	
 	}
-	
-	
+
+	/*
+	 * Depth First Traversal (PostOrder)
+	 * -------------------------------
+	 *	left - right - root
+	 *  30 - 70 - 50
+	 */
 	public void PostOrderTraversal(Node node) {
 		if(node == null) {
 			return;
@@ -80,8 +92,13 @@ class BinaryTree1 {
 		System.out.println(node.data);
 		
 	}
-	
-	
+
+	/*
+	 * Depth First Traversal (InOrder)
+	 * -------------------------------
+	 *	left - root - right
+	 *  30 - 50 - 70
+	 */
 	public void InOrderTraversal(Node node) {
 		if(node == null) {
 			return;

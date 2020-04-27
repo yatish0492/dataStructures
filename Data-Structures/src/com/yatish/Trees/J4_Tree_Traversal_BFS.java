@@ -3,6 +3,13 @@ package com.yatish.Trees;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/*
+	BFS traversal
+	---------------
+	1) Level print nodes with recursive
+	2) Level print nodes without recursive
+
+ */
 public class J4_Tree_Traversal_BFS {
 
 	public static void main(String[] args) {

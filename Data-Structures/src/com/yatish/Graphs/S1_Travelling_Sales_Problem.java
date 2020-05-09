@@ -36,7 +36,7 @@ public class S1_Travelling_Sales_Problem {
 		//We will initialize the 'minimumDistance' to highest value
 		int minimumDistance = Integer.MAX_VALUE;
 		
-		
+		return -1;
 	}
 
 }

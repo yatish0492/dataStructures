@@ -12,6 +12,14 @@ import java.util.Stack;
                 6       -->     12    -> after '6' next greater element is '12'
                 12      -->     -1    -> after '12' there is no greater element than '12' so we assign '-1'
 
+    Solution
+    ---------
+    Appraoch 1   -->   We can have 2 for loops inside 1st one we will iterate over next elements and if we find
+                        any greater than current then we will print that.
+                        Complexity -> O(n*n)
+
+    Approach 2   -->    Using stack. used in this program.
+                        Complexity --> O(n)
 
 
  */

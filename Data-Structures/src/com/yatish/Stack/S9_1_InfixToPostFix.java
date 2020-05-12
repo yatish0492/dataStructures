@@ -58,7 +58,7 @@ public class S9_1_InfixToPostFix {
             }
         }
 
-        // add all the operator sin the stack to result. if '(' is still present that means there is no proper ')'
+        // add all the operators in the stack to result. if '(' is still present that means there is no proper ')'
         // for each '(' so we give 'INVALID EXPRESSION'
         while(!stack.isEmpty()) {
             if(stack.peek() == '(') {

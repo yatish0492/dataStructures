@@ -45,6 +45,7 @@ public class J4_Tree_Traversal_BFS {
 
 		obj.printLevelOrderWithoutRecursionWithoutLevelInformation();
 		obj.printLevelOrderWithRecursionWithLevelInformation();
+		obj.printLevelOrderWithoutRecursionWithLevelInformation();
 
 	}
 
@@ -55,6 +56,7 @@ class BinaryTree2 {
 	
 	Node root;
 
+
 	public void printLevelOrderWithoutRecursionWithoutLevelInformation() {
 		Queue<Node> tempQueue = new LinkedList<Node>();
 		tempQueue.add(root);
@@ -62,6 +64,40 @@ class BinaryTree2 {
 		while (!tempQueue.isEmpty()) {
 			Node currentNode = tempQueue.remove();
 			System.out.println(currentNode.data);
+			if (currentNode.left != null) {
+				tempQueue.add(currentNode.left);
+			}
+			if (currentNode.right != null) {
+				tempQueue.add(currentNode.right);
+			}
+		}
+	}
+
+	/*
+	 Same as above method just that we will use a delimiter node between levels in the queue to distinguish the levels
+	 of tree.
+
+	NOTE : If we want to print the reverse order for a level, then we will add the child nodes to stack first until
+			level end and then pop the elements and print it.
+	      eg: Say like we need to print spiral, then first level we add to queue and print them next level we add to
+	      		both stack and pop them and print them. Along with stack we will add to queue as well but not print
+	      		because For next level we need to print left to right so for that we need parent level nodes left to right.
+	*/
+	public void printLevelOrderWithoutRecursionWithLevelInformation() {
+		Queue<Node> tempQueue = new LinkedList<Node>();
+		tempQueue.add(root);
+		tempQueue.add(new Node(-99)); // we will use '-99' as delimiter for end of a level
+		while (!tempQueue.isEmpty()) {
+			Node currentNode = tempQueue.remove();
+
+
+			if(currentNode.data == -99 && !tempQueue.isEmpty()) {  // So if we encounter -99 that means it is end of
+				System.out.print("\n");							   // level and hence we will add -99 here and goto next
+				tempQueue.add(new Node(-99));				   // line.
+				continue;
+			}
+
+			System.out.print(currentNode.data);
 			if (currentNode.left != null) {
 				tempQueue.add(currentNode.left);
 			}

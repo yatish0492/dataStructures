@@ -20,7 +20,7 @@ package com.yatish.Trees.BST.AVL;
 
 
         Left Rotation 'x'
-        ------------------
+        -----------------
                     x                               y
                    / \     Left Rotation          /  \
                 T1   y   - - - - - - - >         x   T3

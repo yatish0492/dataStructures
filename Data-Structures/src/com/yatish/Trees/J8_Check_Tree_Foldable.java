@@ -66,8 +66,13 @@ class FoldableTreeCheck {
             return true;
         }
         if(leftNode == null || rightNode == null) {
-            return false;
-        }
+            return false;                      // NOTE : We should use conditions for return 'false' but not 'true'
+        }                                     //        because if we give 'true' condition here for first node
+                                             //        or root node. the condition will be satisfied and returned
+                                            //        so other nodes recursive call ll not happen. Only the
+                                           //        base condition mentioned above should return true which
+                                          //        will break the recursion.
+
 
         // If you need to make sure that numbers are also same on the mirror image when folded and not only structure
         // then you can add one more condition here which checks if(leftNode.data != rightNode.data) then return false;

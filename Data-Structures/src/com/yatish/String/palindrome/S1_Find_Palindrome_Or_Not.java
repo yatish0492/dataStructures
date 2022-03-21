@@ -12,7 +12,6 @@ public class S1_Find_Palindrome_Or_Not {
 			if(str.charAt(i) == str.charAt(j)) {
 				i++;
 				j--;
-				continue;
 			} else {
 				System.out.println("Not a palindrom");
 				return;

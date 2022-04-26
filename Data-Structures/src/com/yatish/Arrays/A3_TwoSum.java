@@ -18,7 +18,7 @@ import java.util.Map;
     Logic
     -----
     1) We iterate each array element
-    2) if the number required to add to current element is already there in map then we print them
+    2) if the number required to add to current element to get the sum is already there in map then we print them
     3) if the not present in map then we add current element with its index as value.
 
  */
